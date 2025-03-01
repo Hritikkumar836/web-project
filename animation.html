@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            min-height: 100vh;
+        }
+        .div{
+            height: 200px;
+            width: 200px;
+            background-color: cyan;
+            border: 2px solid black;
+            position: relative;
+            left: 0%;
+            top: 0px;
+            animation: move 4s infinite;
+        }
+        .div1{
+            height: 200px;
+            width: 200px;
+            background-color: cyan;
+            border: 2px solid black;
+            position: fixed;
+            left: 0%;
+            bottom: 0px;
+            animation: move 4s infinite;
+
+        }
+
+
+        @keyframes move{
+            0%{
+                background-color: coral;
+            }
+
+            50%{
+                transform: rotate(360deg);
+                border-radius: 50%;
+                background-image: url(catimage.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                left: 90%;
+            }
+            100%{
+                background-color: chartreuse;
+
+            }
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="div"></div>
+    <div class="div1"></div>
+    <div></div>
+    
+    
+</body>
+</html>
